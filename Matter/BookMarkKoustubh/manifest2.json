@@ -1,0 +1,36 @@
+{
+    "name": "YTCV",
+    "version": "0.1.0",
+    "description":"Youtube to CV",
+    "permissions":["storage","tabs"],
+    "host_permissions":["https://*.youtube.com/*"],
+    "background":{
+        "service_worker": "background.js"
+    },
+    "content_script":[
+        {
+        "matches": ["https://*.youtube.com/*"],
+        "js":["contentScript.js"]
+        }
+    ],
+    "web_accessible_resources":[
+        {
+            "resources":[
+                "./assets/bookmark.png"
+            ],
+            "matches":["https://*.youtube.com/*"]
+
+        }
+    ],
+    "action":{
+        "default_icon":{
+            "16":"./assets/mainlogo.png"
+        },
+        "default_title":"YTCV",
+        "default_popup":"popup.html"
+
+    },
+    "manifest_version":3
+}
+
+

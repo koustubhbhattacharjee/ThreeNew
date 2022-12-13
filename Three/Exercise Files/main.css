@@ -1,0 +1,28 @@
+
+#webgl{
+    position: relative;
+    
+}
+
+#header{
+
+    display: flex;
+    justify-content: center;  
+    position: absolute;
+    z-index: 2;
+    background: white;
+    width: 100px;
+    height:100px;   
+    font-family:proxima-nova,sans-serif;
+    font-weight: 100;
+    font-size: 100px;
+    padding: 200px;
+    top:200px;
+    right:100px;
+    border:0px;
+    margin:0px;
+
+    font-style: normal;
+    color: red;
+    
+}
